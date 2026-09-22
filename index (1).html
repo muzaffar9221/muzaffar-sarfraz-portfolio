@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Muzaffar Sarfraz — Project Manager & Certified Scrum Master</title>
+<meta name="description" content="Certified Scrum Master and Project Manager with 5+ years leading Agile teams and cross-functional delivery. Based in Lahore, Pakistan.">
+<meta property="og:title" content="Muzaffar Sarfraz — Project Manager & Certified Scrum Master">
+<meta property="og:description" content="5+ years leading Agile teams, sprint delivery and stakeholder alignment across B2B/B2C platforms and remote US teams.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://muzaffar-sarfraz-portfolio.vercel.app/">
+<meta property="og:image" content="https://muzaffar-sarfraz-portfolio.vercel.app/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://muzaffar-sarfraz-portfolio.vercel.app/og-image.jpg">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📊</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F3F5F2; --surface:#FFFFFF; --ink:#16233A; --muted:#566377;
+  --line:#D6DCD8; --accent:#1F6B86; --accent-soft:#DCEBF0; --now:#D99A1E; --now-soft:#F7EACB;
+  --display:"Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --body:"Instrument Sans", "Segoe UI", system-ui, -apple-system, sans-serif;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#0F1826; --surface:#162235; --ink:#E8EDF2; --muted:#9AA7B8;
+    --line:#2A3950; --accent:#5DB3D1; --accent-soft:#1B3445; --now:#F0B541; --now-soft:#3A2F17;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0F1826; --surface:#162235; --ink:#E8EDF2; --muted:#9AA7B8;
+  --line:#2A3950; --accent:#5DB3D1; --accent-soft:#1B3445; --now:#F0B541; --now-soft:#3A2F17;
+  color-scheme:dark;
+}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 72px)}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--now);outline-offset:3px;border-radius:4px}
+img{max-width:100%}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+
+/* nav */
+header.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:color-mix(in srgb,var(--paper) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px;gap:16px}
+.mark{font-family:var(--display);font-weight:800;font-size:20px;text-decoration:none;color:var(--ink);letter-spacing:-.02em}
+.mark span{color:var(--accent)}
+nav.links{display:flex;gap:22px}
+nav.links a{color:var(--muted);text-decoration:none;font-size:15px;font-weight:500}
+nav.links a:hover{color:var(--ink)}
+@media (max-width:720px){nav.links{display:none}}
+
+/* hero */
+.hero{padding:72px 0 56px}
+.status{display:inline-flex;align-items:center;gap:8px;font-size:14px;color:var(--muted);margin-bottom:22px}
+.status i{width:9px;height:9px;border-radius:50%;background:var(--now);box-shadow:0 0 0 4px var(--now-soft)}
+h1{font-family:var(--display);font-weight:800;font-size:clamp(44px,8vw,92px);line-height:.95;letter-spacing:-.035em;margin:0 0 18px}
+.role{font-family:var(--display);font-weight:500;font-size:clamp(20px,2.6vw,26px);color:var(--muted);margin:0 0 22px;letter-spacing:-.01em}
+.lede{max-width:62ch;margin:0 0 30px;font-size:18px}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 20px;border-radius:999px;font-weight:600;font-size:15px;text-decoration:none;border:1.5px solid var(--ink);color:var(--ink)}
+.btn.primary{background:var(--ink);color:var(--paper)}
+.btn:hover{transform:translateY(-1px)}
+
+/* hero layout with photo */
+.hero-grid{display:block}
+.portrait{position:relative;margin:0}
+.portrait img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:14px;border:1px solid var(--line)}
+.portrait figcaption{position:absolute;left:14px;bottom:14px;background:var(--surface);color:var(--ink);border:1px solid var(--line);border-radius:999px;padding:6px 12px;font-size:13px;font-weight:600;display:flex;align-items:center;gap:8px}
+.portrait figcaption i{width:8px;height:8px;border-radius:50%;background:var(--now)}
+@media (max-width:860px){.hero-grid{grid-template-columns:1fr;gap:32px}.portrait{max-width:300px;order:-1}}
+
+/* projects */
+.projects{display:grid;gap:0}
+.proj{display:grid;grid-template-columns:260px 1fr;gap:32px;padding:30px 0;border-top:1px solid var(--line)}
+.proj:first-child{border-top:0;padding-top:0}
+.proj .meta{font-weight:600}
+.proj .meta small{display:block;color:var(--muted);font-weight:400;font-size:15px}
+.proj h3{font-family:var(--display);font-size:24px;margin:0 0 8px;letter-spacing:-.015em;line-height:1.2}
+.proj p{margin:0 0 14px;max-width:66ch}
+@media (max-width:860px){.proj{grid-template-columns:1fr;gap:8px}}
+
+/* gantt: the signature element */
+.gantt{margin-top:56px;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:22px 22px 14px}
+.gantt-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:14px}
+.gantt-head h2{font-family:var(--display);font-size:18px;margin:0;font-weight:700}
+.gantt-head p{margin:0;color:var(--muted);font-size:14px}
+.gscroll{overflow-x:auto}
+.ggrid{min-width:640px;position:relative}
+.years{display:grid;grid-template-columns:repeat(8,1fr);margin-left:190px;border-bottom:1px solid var(--line);font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums}
+.years span{padding:0 0 6px 6px;border-left:1px dashed var(--line)}
+.grow{display:flex;align-items:center;height:46px;border-bottom:1px solid var(--line)}
+.grow:last-child{border-bottom:0}
+.glabel{width:190px;flex:none;padding-right:14px;font-size:14px;line-height:1.25}
+.glabel b{display:block;font-weight:600}
+.glabel small{color:var(--muted);font-size:12.5px}
+.gtrack{position:relative;flex:1;height:100%;background-image:repeating-linear-gradient(90deg,transparent 0,transparent calc(12.5% - 1px),var(--line) calc(12.5% - 1px),var(--line) 12.5%)}
+.gbar{position:absolute;top:11px;height:24px;border-radius:6px;background:var(--accent);color:#fff;font-size:12px;font-weight:600;display:flex;align-items:center;padding:0 9px;white-space:nowrap;overflow:hidden;text-decoration:none;transform-origin:left;animation:grow .9s cubic-bezier(.2,.8,.2,1) both}
+.gbar.now{background:var(--now);color:#241800}
+.gbar.now::after{content:"";position:absolute;right:0;top:0;bottom:0;width:18px;background:repeating-linear-gradient(135deg,rgba(255,255,255,.45) 0 4px,transparent 4px 8px)}
+.today{position:absolute;top:0;bottom:0;width:2px;background:var(--now);pointer-events:none}
+.today::before{content:"Today";position:absolute;top:-22px;left:-18px;font-size:11px;font-weight:600;color:var(--now)}
+@keyframes grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@media (prefers-reduced-motion:reduce){.gbar{animation:none}html{scroll-behavior:auto}.btn:hover{transform:none}}
+
+/* sections */
+section.block{padding:72px 0;border-top:1px solid var(--line)}
+.shead{display:grid;grid-template-columns:260px 1fr;gap:32px;margin-bottom:36px}
+.shead h2{font-family:var(--display);font-size:clamp(30px,4vw,42px);line-height:1.05;letter-spacing:-.025em;margin:0}
+.shead p{margin:6px 0 0;color:var(--muted);max-width:60ch}
+.body-offset{margin-left:292px}
+@media (max-width:860px){.shead{grid-template-columns:1fr;gap:10px}.body-offset{margin-left:0}}
+
+.about p{max-width:64ch;margin:0 0 16px}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:0;margin-top:30px;border-top:1px solid var(--line)}
+.facts div{padding:18px 16px 4px 0}
+.facts strong{display:block;font-family:var(--display);font-size:34px;font-weight:700;letter-spacing:-.02em;line-height:1}
+.facts span{color:var(--muted);font-size:14px}
+
+/* skills */
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:28px 36px}
+.skills h3{font-family:var(--display);font-size:20px;margin:0 0 6px;letter-spacing:-.01em}
+.skills p{margin:0 0 12px;color:var(--muted);font-size:15px}
+.tags{display:flex;flex-wrap:wrap;gap:6px;list-style:none;padding:0;margin:0}
+.tags li{font-size:13.5px;padding:4px 10px;border-radius:6px;background:var(--accent-soft);color:var(--ink)}
+
+/* experience */
+.job{display:grid;grid-template-columns:260px 1fr;gap:32px;padding:30px 0;border-top:1px solid var(--line)}
+.job:first-of-type{border-top:0;padding-top:0}
+.job .when{font-variant-numeric:tabular-nums;font-weight:600}
+.job .where{color:var(--muted);font-size:15px}
+.pill{display:inline-block;margin-top:8px;font-size:12.5px;font-weight:600;padding:3px 10px;border-radius:999px;background:var(--now-soft);color:var(--ink)}
+.job h3{font-family:var(--display);font-size:24px;margin:0;letter-spacing:-.015em;line-height:1.2}
+.job .co{margin:2px 0 12px;color:var(--accent);font-weight:600}
+.job ul{margin:0;padding-left:20px;max-width:68ch}
+.job li{margin-bottom:6px}
+.job li::marker{color:var(--accent)}
+@media (max-width:860px){.job{grid-template-columns:1fr;gap:8px}}
+
+/* certs */
+.certs{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:32px}
+.certs h3{font-family:var(--display);font-size:19px;margin:0 0 10px;padding-bottom:8px;border-bottom:2px solid var(--ink)}
+.certs ul{list-style:none;padding:0;margin:0}
+.certs li{padding:9px 0;border-bottom:1px solid var(--line);font-size:15.5px;line-height:1.35}
+.feature-cert{display:flex;gap:18px;align-items:center;background:var(--surface);border:1px solid var(--line);border-left:5px solid var(--now);border-radius:10px;padding:20px 22px;margin-bottom:34px}
+.feature-cert strong{font-family:var(--display);font-size:22px;display:block;line-height:1.2}
+.feature-cert span{color:var(--muted);font-size:15px}
+.seal{flex:none;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;background:var(--now);color:#241800;font-family:var(--display);font-weight:800;font-size:16px}
+
+.edu{font-size:18px}
+.edu strong{font-family:var(--display);font-size:22px;display:block}
+.edu span{color:var(--muted)}
+
+/* contact */
+.contact{background:var(--ink);color:var(--paper);border-radius:18px;padding:48px 40px;margin:72px 0 40px}
+.contact h2{font-family:var(--display);font-size:clamp(32px,5vw,52px);letter-spacing:-.03em;line-height:1;margin:0 0 14px}
+.contact p{max-width:56ch;opacity:.85;margin:0 0 28px}
+.contact .rows{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.contact .rows a,.contact .rows div{display:block;padding:16px 18px;border:1px solid color-mix(in srgb,var(--paper) 25%,transparent);border-radius:10px;color:var(--paper);text-decoration:none}
+.contact .rows a:hover{background:color-mix(in srgb,var(--paper) 8%,transparent)}
+.contact small{display:block;opacity:.7;font-size:13px;margin-bottom:2px}
+.contact b{font-weight:600;word-break:break-word}
+footer{color:var(--muted);font-size:14px;padding:0 0 40px}
+@media (max-width:560px){.contact{padding:36px 22px}.hero{padding-top:48px}}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="mark" href="#top">MS<span>.</span></a>
+    <nav class="links" aria-label="Sections">
+      <a href="#about">About</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#certifications">Certifications</a><a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap" id="top">
+  <section class="hero">
+   <div class="hero-grid">
+   <div>
+    <div class="status"><i></i>Open to new opportunities · Lahore, Pakistan · Remote-ready</div>
+    <h1>Muzaffar<br>Sarfraz</h1>
+    <p class="role">Project Manager &amp; Certified Scrum Master (CSM®)</p>
+    <p class="lede">I lead Agile teams and cross-functional projects from requirements to release. Over 5+ years I've run sprints, managed backlogs and kept stakeholders aligned, with a foundation in software quality assurance that shapes how I plan for quality.</p>
+    <div class="cta">
+      <a class="btn primary" href="mailto:muzaffarsarfraz@outlook.com">Email me</a>
+      <a class="btn" href="#" id="linkedin-btn" target="_blank" rel="noopener">LinkedIn profile</a>
+      <a class="btn" href="#experience">See my experience</a>
+    </div>
+   </div>
+   </div>
+
+    <div class="gantt" aria-labelledby="gantt-title">
+      <div class="gantt-head">
+        <h2 id="gantt-title">Career roadmap, 2019 to today</h2>
+        <p>Select a bar to jump to that role</p>
+      </div>
+      <div class="gscroll">
+        <div class="ggrid">
+          <div class="years" aria-hidden="true"><span>2019</span><span>2020</span><span>2021</span><span>2022</span><span>2023</span><span>2024</span><span>2025</span><span>2026</span></div>
+          <div id="grows"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block about" id="about">
+    <div class="shead">
+      <h2>About</h2>
+      <div>
+        <p style="color:var(--ink);margin:0 0 16px">I'm a Google and Microsoft certified project manager and a Scrum Alliance Certified Scrum Master. My work sits where delivery meets business goals: turning stakeholder needs into clear requirements, then running the sprints, risks and dependencies that get them shipped.</p>
+        <p style="color:var(--ink)">Today I lead development of B2B and B2C marketplace platforms with a team of 25+. Before that I managed delivery for a US company remotely, and coached Scrum teams in Lahore. I track work in Jira, Asana and Monday.com, and I document as I go, with BRDs, risk registers, RACI charts and change logs.</p>
+        <div class="facts">
+          <div><strong>5+</strong><span>years leading Agile teams</span></div>
+          <div><strong>25+</strong><span>team members led today</span></div>
+          <div><strong>100+</strong><span>Agile ceremonies facilitated</span></div>
+          <div><strong>40%</strong><span>sprint velocity gain at Consforc</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="skills">
+    <div class="shead">
+      <h2>Skills</h2>
+      <p>The methods, documents and tools I use to plan, run and report on delivery.</p>
+    </div>
+    <div class="skills body-offset">
+      <div>
+        <h3>Project &amp; Agile management</h3>
+        <p>Scope, sprints, risk and resourcing.</p>
+        <ul class="tags"><li>Scrum</li><li>Sprint planning</li><li>Retrospectives</li><li>Scope management</li><li>Risk mitigation</li><li>Resource allocation</li><li>Cost reduction</li></ul>
+      </div>
+      <div>
+        <h3>Project artefacts</h3>
+        <p>Documents that keep everyone on the same page.</p>
+        <ul class="tags"><li>Project charters</li><li>Gantt charts</li><li>Risk registers</li><li>RACI charts</li><li>Stakeholder registers</li><li>Change logs</li></ul>
+      </div>
+      <div>
+        <h3>Business analysis</h3>
+        <p>Turning needs into buildable requirements.</p>
+        <ul class="tags"><li>BRDs &amp; FRDs</li><li>User stories</li><li>Acceptance criteria</li><li>Requirements elicitation</li><li>Competitive analysis</li><li>Dashboards &amp; reporting</li></ul>
+      </div>
+      <div>
+        <h3>Tools &amp; platforms</h3>
+        <p>Where the work gets tracked.</p>
+        <ul class="tags"><li>Jira</li><li>Confluence</li><li>Asana</li><li>Monday.com</li><li>ClickUp</li><li>Trello</li><li>MS Project</li><li>Slack</li></ul>
+      </div>
+      <div>
+        <h3>Quality &amp; data</h3>
+        <p>A QA background, and data to back decisions.</p>
+        <ul class="tags"><li>Software QA</li><li>Postman</li><li>JMeter</li><li>Excel</li><li>Pivot tables</li><li>Data visualization</li></ul>
+      </div>
+      <div>
+        <h3>Working style</h3>
+        <p>How I work with teams and stakeholders.</p>
+        <ul class="tags"><li>Stakeholder communication</li><li>Conflict resolution</li><li>Problem solving</li><li>Critical thinking</li><li>Adaptability</li></ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="experience">
+    <div class="shead">
+      <h2>Experience</h2>
+      <p>From project coordination to leading a 25+ person marketplace team.</p>
+    </div>
+
+    <article class="job" id="job-exact">
+      <div><div class="when">Dec 2025 – Present</div><div class="where">Pakistan</div><span class="pill">Current role</span></div>
+      <div>
+        <h3>Project Manager</h3>
+        <p class="co">Exact Solution Electronics</p>
+        <ul>
+          <li>Lead ongoing development of B2B and B2C marketplace platforms, managing a cross-functional team of 25+ to deliver features on time.</li>
+          <li>Translate stakeholder requirements into BRDs, FRDs and user stories with clear acceptance criteria.</li>
+          <li>Run competitive analysis of marketplace platforms to find gaps and drive product improvements.</li>
+          <li>Align features with business goals alongside Product, Marketing and Marketplace teams.</li>
+          <li>Manage timelines, risks and dependencies, with visibility through Jira and Asana.</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="job" id="job-anytrek">
+      <div><div class="when">Dec 2023 – Nov 2025</div><div class="where">USA · Remote</div></div>
+      <div>
+        <h3>Project Manager</h3>
+        <p class="co">Anytrek</p>
+        <ul>
+          <li>Tracked velocity, burndown and KPIs, raising the sprint delivery rate by 25%.</li>
+          <li>Facilitated Agile ceremonies to strengthen team alignment and sprint execution.</li>
+          <li>Coordinated teams across 3 departments on shared goals, deliverables and timelines.</li>
+          <li>Managed sprint scope, daily stand-ups and the backlog with the Product Owner.</li>
+          <li>Balanced workloads and resources to increase throughput and reduce blockers.</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="job" id="job-consforc">
+      <div><div class="when">Oct 2022 – Nov 2023</div><div class="where">Lahore, Pakistan</div></div>
+      <div>
+        <h3>Associate Project Manager / Scrum Master</h3>
+        <p class="co">Consforc</p>
+        <ul>
+          <li>Facilitated 100+ Agile ceremonies for teams of 7–10, lifting sprint velocity by 40%.</li>
+          <li>Acted as liaison for 5+ cross-functional teams on scope, priorities and timelines.</li>
+          <li>Defined project scope, objectives and deliverables with stakeholders.</li>
+          <li>Ran backlog grooming and sprint planning with Product Owners.</li>
+          <li>Kept meeting minutes, risk logs and change logs for full traceability, and flagged risks early.</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="job" id="job-tep">
+      <div><div class="when">Jun 2021 – Sep 2022</div><div class="where">Lahore, Pakistan</div></div>
+      <div>
+        <h3>Associate Project Manager / Scrum Master</h3>
+        <p class="co">The Engineering Projects</p>
+        <ul>
+          <li>Coached Agile teams on Scrum practice, making sprints more predictable.</li>
+          <li>Reported on velocity, burndown and capacity, reducing sprint spillover.</li>
+          <li>Led retrospectives and put improvements into practice.</li>
+          <li>Served as the main contact for external stakeholders on sprint goals and outcomes.</li>
+          <li>Removed blockers, resolved team conflicts and tracked milestones in Jira.</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="job" id="job-codeshod">
+      <div><div class="when">Jan 2019 – Mar 2021</div><div class="where">Lahore, Pakistan</div></div>
+      <div>
+        <h3>Project Coordinator</h3>
+        <p class="co">CodeShod</p>
+        <ul>
+          <li>Kept the project calendar of milestones and key deliverables.</li>
+          <li>Facilitated communication between internal teams, clients and stakeholders.</li>
+          <li>Tracked risks and issues and proposed ways to reduce their impact.</li>
+          <li>Managed scope changes, change logs and project records.</li>
+          <li>Prepared reports and presentations for leadership briefings.</li>
+        </ul>
+      </div>
+    </article>
+  </section>
+
+  <section class="block" id="projects">
+    <div class="shead">
+      <h2>Projects</h2>
+      <p>Products I've helped build, from IoT tracking to AI and e-commerce.</p>
+    </div>
+    <div class="projects">
+      <article class="proj">
+        <div class="meta">Exact Solution Electronics<small>2025 – Present · In progress</small><span class="pill">Currently building</span></div>
+        <div>
+          <h3>Multi-vendor marketplace for Europe and the USA</h3>
+          <p>A marketplace platform where many independent vendors sell to buyers across European countries and the USA, supporting both B2B and B2C trade. I lead the 25+ person team building it, from turning stakeholder needs into BRDs and user stories to managing the delivery roadmap, risks and dependencies.</p>
+          <ul class="tags"><li>E-commerce</li><li>B2B &amp; B2C</li><li>Multi-vendor</li><li>EU &amp; US markets</li><li>Jira / Asana</li></ul>
+        </div>
+      </article>
+      <article class="proj">
+        <div class="meta">Anytrek<small>2023 – 2025 · USA, remote</small></div>
+        <div>
+          <h3>IoT real-time asset tracking platform</h3>
+          <p>An application for tracking vehicles, equipment and assets in real time, built on integrated IoT hardware and software. I managed sprint delivery across teams from 3 departments, bringing hardware and software work onto one plan and raising the sprint delivery rate by 25%.</p>
+          <ul class="tags"><li>IoT</li><li>Real-time tracking</li><li>Fleet &amp; asset management</li><li>Hardware + software</li><li>Scrum</li></ul>
+        </div>
+      </article>
+      <article class="proj">
+        <div class="meta">Consforc<small>2022 – 2023 · Lahore</small></div>
+        <div>
+          <h3>AI-based dating app for the US market</h3>
+          <p>A dating application for US users that uses AI to power its experience. As Associate Project Manager and Scrum Master, I ran the Agile ceremonies and backlog planning with the Product Owner, helping lift sprint velocity by 40%.</p>
+          <ul class="tags"><li>AI</li><li>Mobile app</li><li>Consumer product</li><li>US market</li><li>Scrum</li></ul>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="block" id="certifications">
+    <div class="shead">
+      <h2>Certifications</h2>
+      <p>Scrum, project management, product and business analysis.</p>
+    </div>
+    <div class="body-offset">
+      <div class="feature-cert">
+        <div class="seal" aria-hidden="true">CSM</div>
+        <div><strong>Certified Scrum Master (CSM®)</strong><span>Scrum Alliance</span></div>
+      </div>
+      <div class="certs">
+        <div>
+          <h3>Google</h3>
+          <ul>
+            <li>Foundations of Project Management</li>
+            <li>Project Initiation: Starting a Successful Project</li>
+            <li>Project Planning: Putting It All Together</li>
+            <li>Project Execution: Running the Project</li>
+            <li>Agile Project Management</li>
+            <li>Foundations of Business Intelligence</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Microsoft</h3>
+          <ul>
+            <li>Business Analysis Fundamentals</li>
+            <li>Data for Business Analysts Using Microsoft Excel</li>
+            <li>Project Manager Engagement with Stakeholders</li>
+            <li>Team Building and Leadership in Project Management</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Product</h3>
+          <ul>
+            <li>Product Management: An Introduction <br><small style="color:var(--muted)">IBM</small></li>
+            <li>Product Owner: Essential Skills and Tools for Innovation <br><small style="color:var(--muted)">SkillUp EdTech</small></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="education">
+    <div class="shead">
+      <h2>Education</h2>
+      <div class="edu">
+        <strong>Bachelor of Computer Engineering</strong>
+        <span>Bahauddin Zakariya University, Pakistan · 2012 – 2015</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Let's work together</h2>
+    <p>I'm open to project manager and Scrum Master roles, remote or on-site. The quickest way to reach me is email.</p>
+    <div class="rows">
+      <a href="mailto:muzaffarsarfraz@outlook.com"><small>Email</small><b>muzaffarsarfraz@outlook.com</b></a>
+      <a href="tel:+923007563459"><small>Phone</small><b>+92 300 7563459</b></a>
+      <a href="#" id="linkedin-card" target="_blank" rel="noopener"><small>LinkedIn</small><b>in/muzaffarsarfraz-pm</b></a>
+      <div><small>Location</small><b>Lahore, Pakistan</b></div>
+    </div>
+  </section>
+
+  <footer>© 2026 Muzaffar Sarfraz · Project Manager &amp; Certified Scrum Master</footer>
+</main>
+
+<script>
+// Update this with your LinkedIn URL
+const LINKEDIN = "https://www.linkedin.com/in/muzaffarsarfraz-pm/";
+document.getElementById("linkedin-btn").href = LINKEDIN;
+document.getElementById("linkedin-card").href = LINKEDIN;
+
+// Gantt: months counted from Jan 2019; chart spans 96 months (2019–2026)
+const SPAN = 96;
+const now = new Date();
+const nowM = Math.min(SPAN, (now.getFullYear() - 2019) * 12 + now.getMonth() + 1);
+const roles = [
+  { co:"CodeShod", role:"Project Coordinator", s:0, e:27, id:"job-codeshod" },
+  { co:"The Engineering Projects", role:"Assoc. PM / Scrum Master", s:29, e:45, id:"job-tep" },
+  { co:"Consforc", role:"Assoc. PM / Scrum Master", s:45, e:59, id:"job-consforc" },
+  { co:"Anytrek (USA)", role:"Project Manager", s:59, e:83, id:"job-anytrek" },
+  { co:"Exact Solution Electronics", role:"Project Manager", s:83, e:nowM, id:"job-exact", now:true }
+];
+const host = document.getElementById("grows");
+roles.forEach((r, i) => {
+  const row = document.createElement("div");
+  row.className = "grow";
+  const left = (r.s / SPAN * 100).toFixed(2), width = ((r.e - r.s) / SPAN * 100).toFixed(2);
+  const yrs = ((r.e - r.s) / 12).toFixed(1).replace(/\.0$/, "");
+  row.innerHTML =
+    `<div class="glabel"><b>${r.co}</b><small>${r.role}</small></div>
+     <div class="gtrack"><a class="gbar${r.now ? " now" : ""}" href="#${r.id}"
+       style="left:${left}%;width:${width}%;animation-delay:${i * 0.12}s"
+       aria-label="${r.role} at ${r.co}, about ${yrs} years">${yrs} yr${yrs === "1" ? "" : "s"}</a></div>`;
+  host.appendChild(row);
+});
+// "today" marker across the track area
+const tracks = document.querySelectorAll(".gtrack");
+const marker = document.createElement("div");
+marker.className = "today";
+marker.style.left = (nowM / SPAN * 100) + "%";
+tracks[tracks.length - 1].appendChild(marker);
+</script>
+</body>
+</html>
